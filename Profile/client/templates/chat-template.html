@@ -1,0 +1,31 @@
+<template name="appInfo">
+	{{#each messages}}
+		<div class="alert alert-info">
+		</div>
+	
+		<div class="alert alert-info">
+			<b>Name</b> :{{Name}}
+		</div>
+		<div class="alert alert-info">
+			<b>Age</b> : {{Age}}
+		</div>
+		<div class="alert alert-info">
+			<b>Address</b> : {{Address}}
+		</div>
+		<div class="alert alert-info">
+			<b>Gender</b> : {{Gender}}
+		</div>
+		<div class="alert alert-info">
+			<b>Birthdate</b> : {{Birthdate}}
+		</div>
+		<button class="btn btn-danger btn-small btnDelete">&times;</button>
+	{{/each}}
+		<form class="form-group">
+			<input type="text" class="form-control txtName" placeholder="Enter Name">
+			<input type="text" class="form-control txtAge" placeholder="Enter Age">
+			<input type="text" class="form-control txtAddress" placeholder="Enter Address">
+			<input type="text" class="form-control txtGender" placeholder="Enter Gender">
+			<input type="text" class="form-control txtBdate" placeholder="Enter Birth Date">
+			
+ 		</form>
+</template>
